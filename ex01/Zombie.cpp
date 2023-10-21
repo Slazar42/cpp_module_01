@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 17:28:25 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/21 21:41:49 by slazar           ###   ########.fr       */
+/*   Created: 2023/10/21 18:02:42 by slazar            #+#    #+#             */
+/*   Updated: 2023/10/21 22:44:19 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
-# include <string>
-# include <iostream>
+#include "Zombie.hpp"
 
-class Zombie {
+Zombie::Zombie()
+{
 
-	std::string name;
-	public:
-		Zombie(std::string name);
-		~Zombie(void);
-		void	announce();
-};
+}
+Zombie::Zombie(std::string n)
+{
+	name = n;
+	std::cout << "Zombie " << name << " is born\n";
+}
 
-Zombie* newZombie( std::string name );
-void	randomChump( std::string name );
+Zombie::~Zombie()
+{
+	std::cout << "Zombie " << name << " is dead\n";
+}
 
-#endif
+void	Zombie::announce()
+{
+	std::cout << name << " : Braiiiiiiinnnssss...\n";
+}

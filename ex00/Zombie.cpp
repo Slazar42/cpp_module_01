@@ -6,16 +6,15 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 18:02:42 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/21 18:57:26 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/21 21:41:58 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string n, std::string t)
+Zombie::Zombie(std::string n)
 {
 	name = n;
-	type = t;
 	std::cout << "Zombie " << name << " is born\n";
 }
 
