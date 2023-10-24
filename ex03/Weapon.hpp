@@ -6,12 +6,12 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 10:20:32 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/22 14:47:53 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/22 21:58:09 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANB_HPP
-#define HUMANB_HPP
+#ifndef WEAPON_HPP
+#define WEAPON_HPP
 
 #include <iostream>
 
