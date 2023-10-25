@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 10:35:58 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/24 16:59:43 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/25 11:52:36 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@
 
 class HumanB
 {
-    Weapon wp;
+    Weapon *wp;
     std::string name;
     public :
-	HumanB(std::string n, Weapon w);
 	HumanB(std::string n);
+	HumanB();
     void            	setName(std::string n);
     const std::string&	getName();
-    void                setWeapon(Weapon w);
+    void                setWeapon(Weapon &w);
     void            	attack();
 };
 

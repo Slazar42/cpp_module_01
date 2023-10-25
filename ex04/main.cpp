@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 16:29:17 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/24 17:34:56 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/25 15:12:21 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int replace(std::string filename, std::string s1, std::string s2)
 	size_t len_s1 = s1.length();
 	while (std::getline(in, line))
 	{ 
-		while (line.find(s1) != -1)
+		while (line.find(s1) != std::string::npos)
 		{
 			pos = line.find(s1);
 			out << line.substr(0,pos) ;

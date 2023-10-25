@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/24 17:02:57 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/25 11:51:41 by slazar           ###   ########.fr       */
+/*   Created: 2023/10/25 13:07:40 by slazar            #+#    #+#             */
+/*   Updated: 2023/10/25 15:16:47 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#include "Harl.hpp"
 
-Weapon::Weapon()
+int main(int ac, char **av)
 {
-	std::cout << "Weapon : default constructor called" << std::endl;
+	Harl H;
+	if (ac != 2)
+	{
+		std::cout << "Wrong number of arguments" << std::endl;
+		return (1);
+	}
+	std::string level = av[1];
+	H.complain(level);
 }
-Weapon::Weapon(std::string t)
-{
-	std::cout << "Weapon : parametrized constructor called" << std::endl;
-	type = t;
-}
-
-const std::string&    Weapon::getType()
-{
-	return (type);
-}
-
-void            Weapon::setType(std::string t)
-{
-	type = t;
-}
-

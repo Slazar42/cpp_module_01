@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 10:21:14 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/22 15:38:25 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/25 10:01:21 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 
 class HumanA
 {
-    Weapon wp;
+    Weapon& wp;
     std::string name;
     public :
-	HumanA(std::string n, Weapon w);
+	HumanA(std::string n, Weapon& w);
 
     void            attack();
     const std::string&	getName();
