@@ -5,32 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/22 10:21:10 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/22 15:17:14 by slazar           ###   ########.fr       */
+/*   Created: 2023/10/24 17:02:57 by slazar            #+#    #+#             */
+/*   Updated: 2023/10/24 17:20:17 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon()
-{
-	std::cout<< "a Weapon created\n";
-}
 Weapon::Weapon(std::string t)
 {
-	std::cout<< type << " Weapon created\n";
-	
+	type = t;
 }
-Weapon::~Weapon()
+
+const std::string&    Weapon::getType()
 {
-	std::cout<< type << " Weapon destroyed\n";
-	
+	return (type);
 }
+
 void            Weapon::setType(std::string t)
 {
 	type = t;
 }
-const std::string&    Weapon::getType()
+
+Weapon::Weapon()
 {
-	return (type);
 }

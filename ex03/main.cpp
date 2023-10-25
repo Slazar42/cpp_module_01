@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 11:15:55 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/22 11:17:01 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/24 17:47:39 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ int main()
 	jim.setWeapon(club);
 	jim.attack();
 	club.setType("some other type of club");
-	jim.attack
+	jim.attack();
 }
-
 }
